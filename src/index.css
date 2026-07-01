@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  
+  /* Luxury Pastel Palette */
+  --color-gold: #e2c2a4;
+  --color-gold-light: #f6ebd8;
+  --color-rose: #df9e9b;
+  --color-peach: #fad4c0;
+  --color-pink-soft: #fbd6d3;
+  --color-white: #ffffff;
+  --color-white-translucent: rgba(255, 255, 255, 0.85);
+  --color-text-light: rgba(255, 255, 255, 0.9);
+  --color-text-muted: rgba(255, 255, 255, 0.7);
+  --color-bg-dark: #0d0c10;
+  
+  /* Glassmorphism values */
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.12);
+  --glass-blur: blur(16px);
+  --glass-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.25);
+  
+  --glass-dark-bg: rgba(13, 12, 16, 0.35);
+  --glass-dark-border: rgba(255, 255, 255, 0.08);
+  --glass-dark-blur: blur(25px);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-dark);
+  font-family: var(--font-sans);
+  color: var(--color-text-light);
+  overflow-x: hidden;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  border-inline: none;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+  transition: all 0.3s ease;
+}
+
+button {
+  border: none;
+  background: none;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+/* Hide scrollbars but keep functionality */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
